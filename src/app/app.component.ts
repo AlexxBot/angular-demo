@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-root',
+  selector: 'root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-demo';
+  //BIDINGS
+  nombre: string = 'Alex'
+
+  imprimir(){
+    console.log('mi nombre es: '+ this.nombre)
+    this.nombre ='Juan' 
+  }
 }

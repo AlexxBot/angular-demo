@@ -1,0 +1,42 @@
+.contenedor{
+    background-color: green;
+    height: 200px;
+}
+
+.nombre{
+    color: white
+}
+
+.boton{
+    background-color: yellow;
+    color: red
+}
+
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+li {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.navbar{
+    background-color: blue;
+
+}
