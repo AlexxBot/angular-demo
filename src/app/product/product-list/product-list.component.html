@@ -1,0 +1,28 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Category</td>
+                <td>Price</td>
+                <td>ImgURL</td>
+                <td>Acciones</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor='let prod of products'>
+                <td>{{ prod._id }}</td>
+                <td>{{ prod.name }}</td>
+                <td>{{ prod.category }}</td>
+                <td>{{ prod.price }}</td>
+                <td>{{ prod.imgURL }}</td>
+                <td>
+                    <button (click) = "actualizar(prod._id)">Editar</button>
+                    <button (click) = "eliminar(prod._id)">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

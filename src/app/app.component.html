@@ -4,7 +4,7 @@
   <button class='boton' (click)="imprimir()">Imprimir</button>
 </div>
  -->
- <div class='navbar'>
+ <!-- <div class='navbar'>
    <ul class='navegacion'>
      <li> Menu</li>
      <li> users</li>
@@ -14,5 +14,25 @@
 <div class='fila'>
   <items></items>
   <users></users>
+</div> -->
+
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Angular Demo</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="products" class="nav-link">Products</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="products/:id" class="nav-link">Create</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <router-outlet></router-outlet>
+  </div>
 </div>
+
+<!-- <app-product-list></app-product-list> -->
 
